@@ -12,9 +12,16 @@
 		8A50BB9022323C5000DA73C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A50BB8E22323C5000DA73C6 /* Main.storyboard */; };
 		8A50BB9222323C5100DA73C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A50BB9122323C5100DA73C6 /* Assets.xcassets */; };
 		8A50BB9522323C5100DA73C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A50BB9322323C5100DA73C6 /* LaunchScreen.storyboard */; };
+		8A50BB9D22325D6D00DA73C6 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A50BB9C22325D6D00DA73C6 /* StoryViewController.swift */; };
+		8A50BBA022325F7500DA73C6 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A50BB9E22325F7500DA73C6 /* TableViewCell.swift */; };
+		8A50BBA122325F7500DA73C6 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8A50BB9F22325F7500DA73C6 /* TableViewCell.xib */; };
+		A82F789A985A76507B2B6C98 /* libPods-GitAndSwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E3A5AEB2DCBCF44670E177 /* libPods-GitAndSwift.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		53E3A5AEB2DCBCF44670E177 /* libPods-GitAndSwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GitAndSwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EDDB02A930FC4C291FBEEA4 /* Pods-GitAndSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitAndSwift.release.xcconfig"; path = "Target Support Files/Pods-GitAndSwift/Pods-GitAndSwift.release.xcconfig"; sourceTree = "<group>"; };
+		7C3EAF09CEDFCD3D61068CCC /* Pods-GitAndSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitAndSwift.debug.xcconfig"; path = "Target Support Files/Pods-GitAndSwift/Pods-GitAndSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		8A50BB8722323C5000DA73C6 /* GitAndSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitAndSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A50BB8A22323C5000DA73C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A50BB8C22323C5000DA73C6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		8A50BB9122323C5100DA73C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A50BB9422323C5100DA73C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A50BB9622323C5100DA73C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A50BB9C22325D6D00DA73C6 /* StoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		8A50BB9E22325F7500DA73C6 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8A50BB9F22325F7500DA73C6 /* TableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A82F789A985A76507B2B6C98 /* libPods-GitAndSwift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		195354AEB1398C3CAE1CA95A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				53E3A5AEB2DCBCF44670E177 /* libPods-GitAndSwift.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8A50BB7E22323C5000DA73C6 = {
 			isa = PBXGroup;
 			children = (
 				8A50BB8922323C5000DA73C6 /* GitAndSwift */,
 				8A50BB8822323C5000DA73C6 /* Products */,
+				F5FC7EB84F6D4AB66724C1FC /* Pods */,
+				195354AEB1398C3CAE1CA95A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +77,24 @@
 			children = (
 				8A50BB8A22323C5000DA73C6 /* AppDelegate.swift */,
 				8A50BB8C22323C5000DA73C6 /* ViewController.swift */,
+				8A50BB9C22325D6D00DA73C6 /* StoryViewController.swift */,
+				8A50BB9E22325F7500DA73C6 /* TableViewCell.swift */,
+				8A50BB9F22325F7500DA73C6 /* TableViewCell.xib */,
 				8A50BB8E22323C5000DA73C6 /* Main.storyboard */,
 				8A50BB9122323C5100DA73C6 /* Assets.xcassets */,
 				8A50BB9322323C5100DA73C6 /* LaunchScreen.storyboard */,
 				8A50BB9622323C5100DA73C6 /* Info.plist */,
 			);
 			path = GitAndSwift;
+			sourceTree = "<group>";
+		};
+		F5FC7EB84F6D4AB66724C1FC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7C3EAF09CEDFCD3D61068CCC /* Pods-GitAndSwift.debug.xcconfig */,
+				5EDDB02A930FC4C291FBEEA4 /* Pods-GitAndSwift.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +104,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A50BB9922323C5100DA73C6 /* Build configuration list for PBXNativeTarget "GitAndSwift" */;
 			buildPhases = (
+				9F966F556EE1642D38FB835A /* [CP] Check Pods Manifest.lock */,
 				8A50BB8322323C5000DA73C6 /* Sources */,
 				8A50BB8422323C5000DA73C6 /* Frameworks */,
 				8A50BB8522323C5000DA73C6 /* Resources */,
@@ -123,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A50BB9522323C5100DA73C6 /* LaunchScreen.storyboard in Resources */,
+				8A50BBA122325F7500DA73C6 /* TableViewCell.xib in Resources */,
 				8A50BB9222323C5100DA73C6 /* Assets.xcassets in Resources */,
 				8A50BB9022323C5000DA73C6 /* Main.storyboard in Resources */,
 			);
@@ -130,11 +165,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9F966F556EE1642D38FB835A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GitAndSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8A50BB8322323C5000DA73C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A50BB9D22325D6D00DA73C6 /* StoryViewController.swift in Sources */,
+				8A50BBA022325F7500DA73C6 /* TableViewCell.swift in Sources */,
 				8A50BB8D22323C5000DA73C6 /* ViewController.swift in Sources */,
 				8A50BB8B22323C5000DA73C6 /* AppDelegate.swift in Sources */,
 			);
@@ -280,6 +342,7 @@
 		};
 		8A50BB9A22323C5100DA73C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C3EAF09CEDFCD3D61068CCC /* Pods-GitAndSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -297,6 +360,7 @@
 		};
 		8A50BB9B22323C5100DA73C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EDDB02A930FC4C291FBEEA4 /* Pods-GitAndSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
